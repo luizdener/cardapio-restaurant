@@ -1,0 +1,63 @@
+.about {
+    width: 100%;
+    padding: 50px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        font-family: var(--font-primaria);
+        color: var(--cor-font-branca);
+    }
+
+    p {
+        text-align: center;
+        color: var(--cor-font-branca);
+    }
+
+    .cardsContainer {
+        width: 100%;
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centraliza os cards horizontalmente */
+        gap: 20px; /* Espaço entre os cards */
+
+        .card {
+            width: calc(33.333% - 20px);
+            min-width: 320px;
+            height: 400px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            flex: 1 1 calc(33.333% - 40px); /* Cada card ocupa 1/3 do espaço disponível menos o espaço do gap */
+            
+            background-color: #182124; /* Define a cor de fundo do card */
+
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                object-fit: cover;
+            }
+
+            p {
+                color: #7a7878;
+            }
+        }
+    }
+}
