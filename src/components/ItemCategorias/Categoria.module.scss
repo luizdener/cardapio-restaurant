@@ -1,0 +1,19 @@
+.categoria {
+    padding: 10px;
+
+    display: flex;
+
+    background-color: #182124;
+
+    border: none;
+    border-radius: 3px;
+
+    color: var(--cor-font-branca);
+    font-size: 1.05rem;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: #d35400bb;
+    }
+}
