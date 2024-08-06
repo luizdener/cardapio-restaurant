@@ -5,9 +5,9 @@ export default function Topo(){
         <header className={styles.topo}>
             <nav>
                 <a href="/">HOME</a>
-                <a href="">MENU</a>
-                <a href="">ABOUT</a>
-                <a href="">CONTACTS</a>
+                <a href="#menu">MENU</a>
+                <a href="#about">ABOUT</a>
+                <a href="#contacts">CONTACTS</a>
             </nav>
 
             <div className={styles.textContainer}>

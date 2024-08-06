@@ -13,7 +13,10 @@
         width: 100%;
 
         display: flex;
+        justify-content: space-between;
         gap: 10px;
+
+        flex-wrap: wrap;
     }
 
     .barraPesquisa {
@@ -38,11 +41,18 @@
         }
     }
 
-    h2 {
-        font-family: var(--font-primaria);
-        font-size: 2rem;
-        color: #D35400;
-    }
+   .titulo {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        h2 {
+     
+             font-family: var(--font-primaria);
+             font-size: 2rem;
+             color: #D35400;
+         }
+   }
 
     .containerItensCardapio {
         width: 100%;
@@ -50,7 +60,9 @@
         background-color: #182124;
         
         display: flex;
-        gap: 40px;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
 
         border-radius: 5px;
     }

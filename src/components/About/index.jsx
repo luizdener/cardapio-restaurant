@@ -6,7 +6,7 @@ import Poke from '/public/poke.jpg'
 
 export default function About() {
     return (
-        <div className={styles.about}>
+        <div id='about' className={styles.about}>
             <p>Momentos especiais</p>
             <h2>SOBRE NÓS</h2>
 

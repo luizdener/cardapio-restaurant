@@ -1,8 +1,53 @@
 .cardComida {
-    width: 350px;
+    flex: 1 1 calc((100% / 3) - 20px);
+    min-width: 300px;
     height: 400px;
     padding: 5px;
 
     border: 1px solid #D35400;
     border-radius: 4px;
+
+    .imagem {
+        width: calc(100% + 10px);
+        height: 50%;
+
+        margin: -5px -5px 0 -5px;
+        
+        border-radius: 4px 4px 0 0;
+
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    section {
+        position: relative;
+        width: 100%;
+        height: 50%;
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--cor-font-branca);
+        }
+
+        span {
+            font-size: .8rem;
+            color: #D35400;
+        }
+
+        p {
+            color: var(--cor-font-branca);
+
+            margin-top: 20px;
+        }
+
+        .valor {
+            font-weight: bolder;
+            color: #D35400;
+            font-size: 1.2rem;
+
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
 }

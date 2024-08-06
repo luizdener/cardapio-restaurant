@@ -1,7 +1,12 @@
 .categoria {
+    min-width: 115px;
     padding: 10px;
 
     display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-grow: 1;
 
     background-color: #182124;
 

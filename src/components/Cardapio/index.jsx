@@ -26,8 +26,13 @@ export default function Cardapio(){
         setTextoBusca('')
     }
 
+    const handleLimparFiltros = () => {
+        setListaComidas(listaCardapio)
+        setTextoBusca('')
+    }
+
     return(
-        <div className={styles.containerCardapio}>
+        <div id='menu' className={styles.containerCardapio}>
             <section className={styles.containerCategorias}>
                 {
                     categorias.map((categoria) => (
@@ -47,11 +52,12 @@ export default function Cardapio(){
                 />
             </div>
 
-            <h2>Cardápio</h2>
+            <button className={styles.titulo} onClick={handleLimparFiltros}><h2>Cardápio</h2></button>
 
             <section className={styles.containerItensCardapio}>
                 {listaComidas.map((comida) => (
-                    <CardComida 
+                    <CardComida
+                        imagem={comida.imagem}
                         nome={comida.nome}
                         categoria={comida.categoria}
                         descricao={comida.descrição}
